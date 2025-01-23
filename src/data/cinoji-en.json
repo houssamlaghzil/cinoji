@@ -1,0 +1,808 @@
+{
+  "facile": [
+    {
+      "title": "Titanic",
+      "emojis": ["🚢","🌊","💑"]
+    },
+    {
+      "title": "The Lion King",
+      "emojis": ["🦁","👑","🌅"]
+    },
+    {
+      "title": "Frozen",
+      "emojis": ["❄️","👑","⛄"]
+    },
+    {
+      "title": "Avatar",
+      "emojis": ["🌌","👽","🔵"]
+    },
+    {
+      "title": "Harry Potter and the Philosopher's Stone",
+      "emojis": ["⚡","🪄","🏰"]
+    },
+    {
+      "title": "The Avengers",
+      "emojis": ["🦸‍♂️","🦸‍♀️","🌍"]
+    },
+    {
+      "title": "Jurassic Park",
+      "emojis": ["🦖","🌴","⚠️"]
+    },
+    {
+      "title": "Star Wars: Episode IV - A New Hope",
+      "emojis": ["🌌","🚀","⚔️"]
+    },
+    {
+      "title": "The Dark Knight",
+      "emojis": ["🦇","🌃","🃏"]
+    },
+    {
+      "title": "Inception",
+      "emojis": ["💤","🌀","🧠"]
+    },
+    {
+      "title": "Spider-Man (2002)",
+      "emojis": ["🕷️","🕸️","🗽"]
+    },
+    {
+      "title": "Finding Nemo",
+      "emojis": ["🐟","🔍","🌊"]
+    },
+    {
+      "title": "Toy Story",
+      "emojis": ["🤠","🦸‍♂️","🧸"]
+    },
+    {
+      "title": "Shrek",
+      "emojis": ["🟢","👑","🧅"]
+    },
+    {
+      "title": "Beauty and the Beast (1991)",
+      "emojis": ["🌹","🐻","💃"]
+    },
+    {
+      "title": "Cinderella (1950)",
+      "emojis": ["👡","🎃","👸"]
+    },
+    {
+      "title": "The Little Mermaid",
+      "emojis": ["🧜‍♀️","🌊","🐠"]
+    },
+    {
+      "title": "The Matrix",
+      "emojis": ["💊","💻","🤖"]
+    },
+    {
+      "title": "Pirates of the Caribbean: The Curse of the Black Pearl",
+      "emojis": ["🏴‍☠️","🌊","🦜"]
+    },
+    {
+      "title": "Despicable Me",
+      "emojis": ["😈","👨‍🔬","🔫"]
+    },
+    {
+      "title": "Moana",
+      "emojis": ["🏝️","🌊","🐚"]
+    },
+    {
+      "title": "Aladdin (1992)",
+      "emojis": ["💎","🧞","🏜️"]
+    },
+    {
+      "title": "The Jungle Book (1967)",
+      "emojis": ["🐅","🐻","🎶"]
+    },
+    {
+      "title": "Up",
+      "emojis": ["🏠","🎈","👴"]
+    },
+    {
+      "title": "WALL-E",
+      "emojis": ["🤖","🌍","💔"]
+    },
+    {
+      "title": "Zootopia",
+      "emojis": ["🐰","🦊","🚓"]
+    },
+    {
+      "title": "Coco",
+      "emojis": ["🎸","💀","🕯️"]
+    },
+    {
+      "title": "Inside Out",
+      "emojis": ["😃","😢","😡"]
+    },
+    {
+      "title": "Monsters, Inc.",
+      "emojis": ["👹","🚪","👧"]
+    },
+    {
+      "title": "The Incredibles",
+      "emojis": ["🦸‍♂️","🦸‍♀️","👨‍👩‍👧‍👦"]
+    },
+    {
+      "title": "Forrest Gump",
+      "emojis": ["🏃‍♂️","🍫","🦐"]
+    },
+    {
+      "title": "Home Alone",
+      "emojis": ["🏠","👦","🧳"]
+    },
+    {
+      "title": "E.T. the Extra-Terrestrial",
+      "emojis": ["👽","🚲","🌕"]
+    },
+    {
+      "title": "Back to the Future",
+      "emojis": ["🚗","⚡","⏰"]
+    },
+    {
+      "title": "Ghostbusters (1984)",
+      "emojis": ["👻","🚫","🏢"]
+    },
+    {
+      "title": "Men in Black",
+      "emojis": ["👽","🕶️","💥"]
+    },
+    {
+      "title": "The Hunger Games",
+      "emojis": ["🏹","🔥","🕊️"]
+    },
+    {
+      "title": "The Twilight Saga: Twilight",
+      "emojis": ["🧛‍♂️","🐺","🌅"]
+    },
+    {
+      "title": "Fast & Furious (2001)",
+      "emojis": ["🏎️","💨","💥"]
+    },
+    {
+      "title": "Iron Man",
+      "emojis": ["🤖","💼","🔋"]
+    },
+    {
+      "title": "Thor",
+      "emojis": ["⚡","🔨","🌩️"]
+    },
+    {
+      "title": "Captain America: The First Avenger",
+      "emojis": ["🇺🇸","🛡️","💉"]
+    },
+    {
+      "title": "Guardians of the Galaxy",
+      "emojis": ["🌌","🔫","🌱"]
+    },
+    {
+      "title": "Batman Begins",
+      "emojis": ["🦇","🏙️","🌃"]
+    },
+    {
+      "title": "Wonder Woman (2017)",
+      "emojis": ["👸","💪","⚔️"]
+    },
+    {
+      "title": "Aquaman",
+      "emojis": ["🌊","🧜‍♂️","⚔️"]
+    },
+    {
+      "title": "Deadpool",
+      "emojis": ["🤕","🗡️","😂"]
+    },
+    {
+      "title": "Jumanji (1995)",
+      "emojis": ["🎲","🦁","🌴"]
+    },
+    {
+      "title": "Jumanji: Welcome to the Jungle",
+      "emojis": ["🎲","🌴","🎮"]
+    },
+    {
+      "title": "Mamma Mia!",
+      "emojis": ["🎶","💃","🇬🇷"]
+    },
+    {
+      "title": "The Greatest Showman",
+      "emojis": ["🎩","🎪","🎶"]
+    },
+    {
+      "title": "Transformers (2007)",
+      "emojis": ["🚘","🤖","💥"]
+    },
+    {
+      "title": "King Kong (2005)",
+      "emojis": ["🦍","🏙️","🗼"]
+    },
+    {
+      "title": "Godzilla (2014)",
+      "emojis": ["🦖","🏙️","💥"]
+    },
+    {
+      "title": "300",
+      "emojis": ["⚔️","🏛️","💂‍♂️"]
+    },
+    {
+      "title": "Gladiator",
+      "emojis": ["🏛️","⚔️","🦁"]
+    },
+    {
+      "title": "The Fifth Element",
+      "emojis": ["🌌","🔮","💃"]
+    },
+    {
+      "title": "Indiana Jones and the Raiders of the Lost Ark",
+      "emojis": ["👨‍🎓","🏺","🐍"]
+    },
+    {
+      "title": "The Lord of the Rings: The Fellowship of the Ring",
+      "emojis": ["💍","👣","🏔️"]
+    },
+    {
+      "title": "The Hobbit: An Unexpected Journey",
+      "emojis": ["🧙","👣","🐉"]
+    },
+    {
+      "title": "Star Trek (2009)",
+      "emojis": ["🖖","🚀","🌌"]
+    },
+    {
+      "title": "Mission: Impossible (1996)",
+      "emojis": ["🕵️‍♂️","💣","🏃‍♂️"]
+    },
+    {
+      "title": "Skyfall (James Bond)",
+      "emojis": ["🕶️","🔫","🍸"]
+    },
+    {
+      "title": "The Terminator",
+      "emojis": ["🤖","🔫","⏲️"]
+    },
+    {
+      "title": "Terminator 2: Judgment Day",
+      "emojis": ["🤖","🔫","🔥"]
+    },
+    {
+      "title": "John Wick",
+      "emojis": ["🐶","🔫","🕶️"]
+    }
+  ],
+  "moyen": [
+    {
+      "title": "Psycho (1960)",
+      "emojis": ["🔪","🚿","😱","🏨"]
+    },
+    {
+      "title": "Citizen Kane",
+      "emojis": ["📰","🏰","❓","👴"]
+    },
+    {
+      "title": "The Shawshank Redemption",
+      "emojis": ["⛓️","🏆","🚪","🌦️"]
+    },
+    {
+      "title": "Pulp Fiction",
+      "emojis": ["💼","🍔","💉","🩸"]
+    },
+    {
+      "title": "Fight Club",
+      "emojis": ["👊","💥","❌","🧼"]
+    },
+    {
+      "title": "The Godfather",
+      "emojis": ["👨‍👦","🕴️","💵","🕶️"]
+    },
+    {
+      "title": "The Godfather Part II",
+      "emojis": ["🕴️","👨‍👦","🇨🇺","🕶️"]
+    },
+    {
+      "title": "Schindler's List",
+      "emojis": ["📜","🕯️","✡️","🌑"]
+    },
+    {
+      "title": "The Green Mile",
+      "emojis": ["⚡","👮","🧑‍⚖️","🩸"]
+    },
+    {
+      "title": "Se7en",
+      "emojis": ["7️⃣","🔍","📦","🔪"]
+    },
+    {
+      "title": "The Silence of the Lambs",
+      "emojis": ["🦋","🔇","🔪","👮‍♀️"]
+    },
+    {
+      "title": "Saving Private Ryan",
+      "emojis": ["🌊","⚔️","🇺🇸","💂‍♂️"]
+    },
+    {
+      "title": "The Pianist",
+      "emojis": ["🎹","🇵🇱","🎶","🌆"]
+    },
+    {
+      "title": "Interstellar",
+      "emojis": ["🚀","🌌","⏳","👩‍👧"]
+    },
+    {
+      "title": "Dunkirk",
+      "emojis": ["⛵","🏖️","⚔️","🏳️"]
+    },
+    {
+      "title": "Braveheart",
+      "emojis": ["🏴󠁧󠁢󠁳󠁣󠁴󠁿","⚔️","💙","🥁"]
+    },
+    {
+      "title": "Kill Bill: Vol. 1",
+      "emojis": ["👱‍♀️","🔪","💀","🩸"]
+    },
+    {
+      "title": "Kill Bill: Vol. 2",
+      "emojis": ["👱‍♀️","🩸","☠️","👰"]
+    },
+    {
+      "title": "Reservoir Dogs",
+      "emojis": ["👔","💼","🔫","💥"]
+    },
+    {
+      "title": "The Prestige",
+      "emojis": ["🪄","🎩","🃏","🧙‍♂️"]
+    },
+    {
+      "title": "Memento",
+      "emojis": ["📝","🧠","❓","⏪"]
+    },
+    {
+      "title": "Good Will Hunting",
+      "emojis": ["🧮","🧠","🏫","🍏"]
+    },
+    {
+      "title": "The Departed",
+      "emojis": ["🐀","👮‍♂️","🔫","💼"]
+    },
+    {
+      "title": "Once Upon a Time in Hollywood",
+      "emojis": ["🎬","🌇","👨‍🎤","🚘"]
+    },
+    {
+      "title": "La La Land",
+      "emojis": ["💃","🎹","🌃","🌟"]
+    },
+    {
+      "title": "Whiplash",
+      "emojis": ["🥁","🎶","🏫","😠"]
+    },
+    {
+      "title": "Gravity",
+      "emojis": ["🚀","🌌","🧑‍🚀","💫"]
+    },
+    {
+      "title": "The Revenant",
+      "emojis": ["🐻","❄️","👨","🔫"]
+    },
+    {
+      "title": "Mad Max: Fury Road",
+      "emojis": ["🚚","🏜️","⚔️","💥"]
+    },
+    {
+      "title": "Blade Runner",
+      "emojis": ["🤖","🌆","🔦","🏙️"]
+    },
+    {
+      "title": "Blade Runner 2049",
+      "emojis": ["🤖","🌆","👁️","🌫️"]
+    },
+    {
+      "title": "Alien",
+      "emojis": ["👽","🚀","💀","🛸"]
+    },
+    {
+      "title": "Aliens",
+      "emojis": ["👽","🚀","🔫","💥"]
+    },
+    {
+      "title": "Predator",
+      "emojis": ["🌴","👽","🔫","💪"]
+    },
+    {
+      "title": "Die Hard",
+      "emojis": ["🏢","🔫","🦶","💥"]
+    },
+    {
+      "title": "The Truman Show",
+      "emojis": ["📺","🌎","🎥","🔒"]
+    },
+    {
+      "title": "Cast Away",
+      "emojis": ["🏝️","🏐","✈️","🌊"]
+    },
+    {
+      "title": "The Wolf of Wall Street",
+      "emojis": ["🐺","💰","💹","🍸"]
+    },
+    {
+      "title": "The Social Network",
+      "emojis": ["💻","👨‍💻","🌐","💵"]
+    },
+    {
+      "title": "Black Panther",
+      "emojis": ["🐈","👑","🌍","💥"]
+    },
+    {
+      "title": "Logan",
+      "emojis": ["🦸‍♂️","👴","👧","⚔️"]
+    },
+    {
+      "title": "Joker",
+      "emojis": ["🤡","🔪","🃏","😈"]
+    },
+    {
+      "title": "The Sixth Sense",
+      "emojis": ["👦","👻","🏥","😨"]
+    },
+    {
+      "title": "The Usual Suspects",
+      "emojis": ["🚢","🔍","👥","❓"]
+    },
+    {
+      "title": "American Beauty",
+      "emojis": ["🌹","🏡","💔","📸"]
+    },
+    {
+      "title": "Parasite",
+      "emojis": ["🏚️","💰","🔪","💧"]
+    },
+    {
+      "title": "Oldboy (2003)",
+      "emojis": ["🔒","🗝️","🔨","🍲"]
+    },
+    {
+      "title": "Spirited Away",
+      "emojis": ["👧","🐉","👻","🏯"]
+    },
+    {
+      "title": "Princess Mononoke",
+      "emojis": ["👸","🐺","🌳","⚔️"]
+    },
+    {
+      "title": "Akira",
+      "emojis": ["🏍️","💥","🧠","🏙️"]
+    },
+    {
+      "title": "Your Name",
+      "emojis": ["🌠","🎐","👦","👧"]
+    },
+    {
+      "title": "The Big Lebowski",
+      "emojis": ["🎳","🥛","🕶️","😎"]
+    },
+    {
+      "title": "American Psycho",
+      "emojis": ["👔","🔪","💼","😈"]
+    },
+    {
+      "title": "The Shining",
+      "emojis": ["🏨","🪓","🚪","👨‍👩‍👧"]
+    },
+    {
+      "title": "Doctor Strange",
+      "emojis": ["🧙‍♂️","🌀","⏳","💥"]
+    },
+    {
+      "title": "Avengers: Infinity War",
+      "emojis": ["🦸‍♂️","🦸‍♀️","💎","💥"]
+    },
+    {
+      "title": "Avengers: Endgame",
+      "emojis": ["🦸‍♂️","🦸‍♀️","⏰","🔚"]
+    },
+    {
+      "title": "Black Widow",
+      "emojis": ["🕷️","👩","🕶️","💥"]
+    },
+    {
+      "title": "Shang-Chi and the Legend of the Ten Rings",
+      "emojis": ["👊","💍","🐉","🇨🇳"]
+    },
+    {
+      "title": "Captain Marvel",
+      "emojis": ["👩","🌌","💫","💥"]
+    },
+    {
+      "title": "Thor: Ragnarok",
+      "emojis": ["⚡","🔨","🌈","💥"]
+    },
+    {
+      "title": "Godzilla vs. Kong",
+      "emojis": ["🦖","🦍","💥","🌊"]
+    },
+    {
+      "title": "Pacific Rim",
+      "emojis": ["🤖","🦑","🌊","💥"]
+    },
+    {
+      "title": "District 9",
+      "emojis": ["👽","🚫","🏚️","🔍"]
+    },
+    {
+      "title": "In Bruges",
+      "emojis": ["🏰","🇧🇪","🔫","💀"]
+    },
+    {
+      "title": "The Grand Budapest Hotel",
+      "emojis": ["🏨","🎩","🎂","👴"]
+    },
+    {
+      "title": "The Great Gatsby (2013)",
+      "emojis": ["🍸","💰","🏰","🎉"]
+    }
+  ],
+  "difficile": [
+    {
+      "title": "The Cabinet of Dr. Caligari (1920)",
+      "emojis": ["🌑","🎪","🌀","👁️","🪄"]
+    },
+    {
+      "title": "Metropolis (1927)",
+      "emojis": ["🏙️","🤖","⚙️","🏭","🌆"]
+    },
+    {
+      "title": "Rashomon (1950)",
+      "emojis": ["⛩️","🌧️","👥","❓","⛓️"]
+    },
+    {
+      "title": "Seven Samurai (1954)",
+      "emojis": ["⛩️","⚔️","7️⃣","🏯","🌾"]
+    },
+    {
+      "title": "The 400 Blows (1959)",
+      "emojis": ["👦","🏫","🚓","🏃‍♂️","🇫🇷"]
+    },
+    {
+      "title": "Breathless (À bout de souffle) (1960)",
+      "emojis": ["🚬","🚗","👮‍♂️","🇫🇷","💋"]
+    },
+    {
+      "title": "La Dolce Vita (1960)",
+      "emojis": ["🍝","🇮🇹","🎉","⛲","📰"]
+    },
+    {
+      "title": "Persona (1966)",
+      "emojis": ["👩","👩","🎭","😶","🔇"]
+    },
+    {
+      "title": "2001: A Space Odyssey (1968)",
+      "emojis": ["🚀","🌌","🤖","🔴","🧠"]
+    },
+    {
+      "title": "Once Upon a Time in the West (1968)",
+      "emojis": ["🤠","🚂","🔫","🏜️","🎶"]
+    },
+    {
+      "title": "Chinatown (1974)",
+      "emojis": ["👔","🕶️","🔍","💦","🇺🇸"]
+    },
+    {
+      "title": "The Conversation (1974)",
+      "emojis": ["🎤","🎧","🔎","🏢","🔇"]
+    },
+    {
+      "title": "Barry Lyndon (1975)",
+      "emojis": ["🇬🇧","🎩","👑","💰","🔫"]
+    },
+    {
+      "title": "Taxi Driver (1976)",
+      "emojis": ["🚖","👀","🔫","🌃","😠"]
+    },
+    {
+      "title": "The Deer Hunter (1978)",
+      "emojis": ["🦌","🔫","🇺🇸","🎰","⛓️"]
+    },
+    {
+      "title": "Apocalypse Now (1979)",
+      "emojis": ["🌴","🚁","⚔️","🔥","🇻🇳"]
+    },
+    {
+      "title": "The Elephant Man (1980)",
+      "emojis": ["🐘","👨","🎪","😢","👺"]
+    },
+    {
+      "title": "Raging Bull (1980)",
+      "emojis": ["🥊","🐂","🩸","🪞","⚫"]
+    },
+    {
+      "title": "Blue Velvet (1986)",
+      "emojis": ["🔵","🧥","🔪","👀","🤫"]
+    },
+    {
+      "title": "Cinema Paradiso (1988)",
+      "emojis": ["🎥","👦","👴","🇮🇹","😢"]
+    },
+    {
+      "title": "Grave of the Fireflies (1988)",
+      "emojis": ["🔥","🐞","🇯🇵","👧","👦"]
+    },
+    {
+      "title": "My Neighbor Totoro (1988)",
+      "emojis": ["🌳","🐱","🚌","👧","🎋"]
+    },
+    {
+      "title": "Dead Poets Society (1989)",
+      "emojis": ["📜","👨‍🏫","🏫","🎭","🌟"]
+    },
+    {
+      "title": "The Hunt (Jagten) (2012)",
+      "emojis": ["👨","👧","❌","🔫","🌲"]
+    },
+    {
+      "title": "City of God (2002)",
+      "emojis": ["🏙️","🌴","🔫","🇧🇷","⚠️"]
+    },
+    {
+      "title": "Pan's Labyrinth (2006)",
+      "emojis": ["🐚","👧","🐸","🇪🇸","🦑"]
+    },
+    {
+      "title": "Amélie (2001)",
+      "emojis": ["🇫🇷","☕","💕","📷","🌟"]
+    },
+    {
+      "title": "Amour (2012)",
+      "emojis": ["❤️","👵","👴","🎹","🇫🇷"]
+    },
+    {
+      "title": "Children of Men (2006)",
+      "emojis": ["👶","🚫","🌍","🔫","🚗"]
+    },
+    {
+      "title": "Requiem for a Dream (2000)",
+      "emojis": ["💊","💉","📺","🍫","😱"]
+    },
+    {
+      "title": "Donnie Darko (2001)",
+      "emojis": ["🐇","🌑","⏰","👨‍🦰","✈️"]
+    },
+    {
+      "title": "Sin City (2005)",
+      "emojis": ["🌃","🔫","🩸","🖤","👠"]
+    },
+    {
+      "title": "Mulholland Drive (2001)",
+      "emojis": ["🌃","🎬","🤯","🚗","👩"]
+    },
+    {
+      "title": "Lost in Translation (2003)",
+      "emojis": ["🏯","🌆","🇯🇵","👴","👱‍♀️"]
+    },
+    {
+      "title": "The Lives of Others (2006)",
+      "emojis": ["👂","🇩🇪","🚪","🔎","📼"]
+    },
+    {
+      "title": "12 Monkeys (1995)",
+      "emojis": ["🐒","1️⃣2️⃣","🔬","⏳","💉"]
+    },
+    {
+      "title": "Fargo (1996)",
+      "emojis": ["❄️","⛓️","🔫","👮‍♀️","❓"]
+    },
+    {
+      "title": "Trainspotting (1996)",
+      "emojis": ["🚂","👀","💊","🇬🇧","💩"]
+    },
+    {
+      "title": "Snatch (2000)",
+      "emojis": ["💎","🔫","💰","🥊","🐕"]
+    },
+    {
+      "title": "Lock, Stock and Two Smoking Barrels (1998)",
+      "emojis": ["🔒","📦","🔫","💰","💥"]
+    },
+    {
+      "title": "The Intouchables (2011)",
+      "emojis": ["👨‍🦽","🤝","🇫🇷","🎶","🤣"]
+    },
+    {
+      "title": "Léon: The Professional (1994)",
+      "emojis": ["🔫","👧","🌱","🕶️","🇫🇷"]
+    },
+    {
+      "title": "Amadeus (1984)",
+      "emojis": ["🎼","🇦🇹","🎹","🎭","👏"]
+    },
+    {
+      "title": "The Sting (1973)",
+      "emojis": ["🎩","🎶","💵","🎻","😏"]
+    },
+    {
+      "title": "The Princess Bride (1987)",
+      "emojis": ["👸","🤺","💘","🧚","😂"]
+    },
+    {
+      "title": "Scarface (1983)",
+      "emojis": ["🇨🇺","💰","🔫","💉","🔥"]
+    },
+    {
+      "title": "The Exorcist (1973)",
+      "emojis": ["👧","😈","⛪","👻","🕯️"]
+    },
+    {
+      "title": "Rocky (1976)",
+      "emojis": ["🥊","🇺🇸","🏙️","👊","🎶"]
+    },
+    {
+      "title": "One Flew Over the Cuckoo's Nest (1975)",
+      "emojis": ["🪶","😵","🏥","👨","🏐"]
+    },
+    {
+      "title": "Goodfellas (1990)",
+      "emojis": ["🔫","🍝","💰","🕴️","🚗"]
+    },
+    {
+      "title": "Heat (1995)",
+      "emojis": ["🔥","🔫","🏦","🚓","⚖️"]
+    },
+    {
+      "title": "Big Fish (2003)",
+      "emojis": ["🐟","👨","🧚‍♀️","🤰","🌳"]
+    },
+    {
+      "title": "Sweeney Todd: The Demon Barber of Fleet Street (2007)",
+      "emojis": ["💈","🔪","🎶","😈","🥧"]
+    },
+    {
+      "title": "The Machinist (2004)",
+      "emojis": ["⚙️","😰","🛌","🪚","🕒"]
+    },
+    {
+      "title": "Serenity (2005)",
+      "emojis": ["🚀","🛡️","🌌","🤠","🔥"]
+    },
+    {
+      "title": "Eternal Sunshine of the Spotless Mind (2004)",
+      "emojis": ["🧠","❄️","💔","🕳️","💭"]
+    },
+    {
+      "title": "No Country for Old Men (2007)",
+      "emojis": ["🔫","🩸","💼","🪙","🌵"]
+    },
+    {
+      "title": "Lady Bird (2017)",
+      "emojis": ["👩","🏫","❤️","👩‍👧","🎓"]
+    },
+    {
+      "title": "1917 (2019)",
+      "emojis": ["1️⃣9️⃣1️⃣7️⃣","⚔️","🏃‍♂️","🇬🇧","💣"]
+    },
+    {
+      "title": "Zodiac (2007)",
+      "emojis": ["♓","❓","🔪","🗞️","🔎"]
+    },
+    {
+      "title": "Prisoners (2013)",
+      "emojis": ["🔒","👨","👧","🔍","❓"]
+    },
+    {
+      "title": "Sicario (2015)",
+      "emojis": ["🇲🇽","🔫","🚦","💣","👮"]
+    },
+    {
+      "title": "Babel (2006)",
+      "emojis": ["🌎","🗣️","🔊","❌","🏜️"]
+    },
+    {
+      "title": "Birds of Passage (Pájaros de verano) (2018)",
+      "emojis": ["🦜","🇨🇴","💰","🚫","🌵"]
+    },
+    {
+      "title": "Miller's Crossing (1990)",
+      "emojis": ["🏙️","🔫","💼","🌲","🎩"]
+    },
+    {
+      "title": "There Will Be Blood (2007)",
+      "emojis": ["⛽","🩸","⛏️","💰","⛪"]
+    },
+    {
+      "title": "The King's Speech (2010)",
+      "emojis": ["👑","🎤","🇬🇧","👨‍🦱","🗣️"]
+    }
+  ]
+}

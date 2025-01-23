@@ -1,0 +1,90 @@
+/* Group.css */
+.group {
+    display: flex;
+    align-items: center;
+    background-color: #ecf0f1;
+    padding: 5px;
+    border-radius: 5px;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.group-name {
+    flex: 1;
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    margin-right: 5px;
+}
+
+.points {
+    display: flex;
+    align-items: center;
+}
+
+.points button {
+    background-color: #e67e22;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.points span {
+    margin: 0 5px;
+    width: 20px;
+    text-align: center;
+}
+
+.remove-group-button {
+    background-color: transparent;
+    color: #e74c3c;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.remove-group-button:disabled {
+    color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+.remove-group-button:hover:not(:disabled) {
+    color: #c0392b;
+}
+
+/* Adaptation mobile */
+@media (max-width: 480px) {
+    .group {
+        padding: 3px;
+    }
+
+    .group-name {
+        font-size: 0.9rem;
+        margin-right: 3px;
+    }
+
+    .points button {
+        width: 25px;
+        height: 25px;
+        font-size: 0.8rem;
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+
+    .points span {
+        margin: 0 3px;
+        width: 18px;
+    }
+
+    .remove-group-button {
+        font-size: 1rem;
+        margin-left: 5px;
+    }
+}
