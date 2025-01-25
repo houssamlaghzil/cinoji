@@ -1,14 +1,20 @@
-// src/index.js
+// Exemple index.js
 import React from 'react';
-import ReactDOM from 'react-dom/client'; // Import correct pour React 18
+import ReactDOM from 'react-dom/client';
 import App from './App';
-import './index.css'; // Styles globaux
+import './index.css';
 
-const container = document.getElementById('root');
-const root = ReactDOM.createRoot(container); // Créer une racine React
+// Par défaut :
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>
+// );
 
+// TEST : désactive le mode strict
+const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <React.StrictMode>
-        <App />
-    </React.StrictMode>
+    // plus de StrictMode
+    <App />
 );

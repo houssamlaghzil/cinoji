@@ -161,7 +161,7 @@
 .scoreboard-controls button {
     padding: 8px 12px;
     background-color: var(--accent-color);
-    color: var(--text-color);
+    color: black;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -303,5 +303,122 @@
     .action-button {
         padding: 5px 8px;
         font-size: 0.8rem;
+    }
+}
+
+
+/* Style pour le conteneur de la réponse */
+.reponse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color var(--transition-duration), transform var(--transition-duration);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Style pour l'input */
+#value {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    outline: none;
+    transition: border-color var(--transition-duration), box-shadow var(--transition-duration);
+}
+
+/* Effets focus pour l'input */
+#value:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 5px var(--accent-color);
+}
+
+/* Style pour le bouton */
+.reponse button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color var(--transition-duration), transform var(--transition-duration);
+}
+
+/* Hover et clic pour le bouton */
+.reponse button:hover {
+    background-color: #388e3c; /* Ajusté pour ne pas utiliser darken */
+    transform: scale(1.05);
+}
+
+.reponse button:active {
+    transform: scale(0.95);
+}
+
+/* Animation d'apparition */
+.reponse {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+/* Animation pour rendre l'apparition fluide */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Style pour le texte de résultat */
+#resultat {
+    font-size: 1.2rem; /* Taille de texte légèrement augmentée */
+    font-weight: bold; /* Texte mis en valeur */
+    text-align: center; /* Centré */
+    margin-top: 15px;
+    padding: 10px 15px;
+    color: var(--text-color); /* Couleur du texte (variable définie dans le fichier CSS global) */
+    background-color: var(--secondary-color); /* Fond assorti au thème */
+    border: 2px solid var(--primary-color); /* Bordure cohérente avec le design général */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre pour donner de la profondeur */
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+/* Animation de mise en avant (par exemple, lorsqu’un résultat est affiché) */
+#resultat:empty {
+    display: none; /* Si le texte est vide, on ne montre rien */
+}
+
+/* Effet au moment où le texte apparaît */
+#resultat.show {
+    transform: scale(1.1); /* Effet de zoom temporaire */
+    background-color: var(--accent-color); /* Couleur d'accentuation */
+    animation: popIn 0.3s ease-in-out;
+}
+
+/* Animation "pop" pour le texte */
+@keyframes popIn {
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
     }
 }
