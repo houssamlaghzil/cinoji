@@ -1,15 +1,12 @@
-import React, { useState } from 'react';
-
+// src/components/RestrictedGame.js
+import React from 'react';
 
 function RestrictedGame() {
-    const [message, setMessage] = useState('Bienvenue dans le mode VIP !');
-
     return (
-        <div style={{ marginTop: '2rem' }}>
-            <h2>Mode de jeu restreint</h2>
-            <p>{message}</p>
-
-            {/* Place ici ton code de jeu spécifique */}
+        <div style={{ padding: '2rem' }}>
+            <h2>Jeu Restreint</h2>
+            <p>Bienvenue dans le jeu restreint. Vous avez accès à ce contenu car vous avez payé.</p>
+            {/* Ajoutez ici votre logique de jeu */}
         </div>
     );
 }

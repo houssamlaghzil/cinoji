@@ -18,12 +18,12 @@ const auth = getAuth(app);
 
 // Création de compte
 export async function signUp(email, password) {
-    return await createUserWithEmailAndPassword(auth, email, password);
+    /*return await createUserWithEmailAndPassword(auth, email, password);*/
 }
 
 // Connexion
 export async function signIn(email, password) {
-    return await signInWithEmailAndPassword(auth, email, password);
+    // return await signInWithEmailAndPassword(auth, email, password);
 }
 
 // Déconnexion

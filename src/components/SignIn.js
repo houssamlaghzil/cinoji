@@ -1,34 +1,48 @@
+// src/components/SignIn.js
 import React, { useState } from 'react';
-import { signIn, signUp } from '../firebase';
-import { useNavigate } from 'react-router-dom';
-import './SignIn.css'
+import { signInWithEmailAndPassword } from 'firebase/auth';
+import { auth } from '../firebase';
+import { useNavigate, Link } from 'react-router-dom';
+import './SignIn.css'; // Assurez-vous que ce fichier existe et est stylisé
 
 function SignIn() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [isSignUp, setIsSignUp] = useState(false); // bascule login/inscription
+    const [error, setError] = useState('');
     const navigate = useNavigate();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setError('');
 
         try {
-            if (isSignUp) {
-                await signUp(email, password);
-            } else {
-                await signIn(email, password);
-            }
-            // Redirection par défaut vers la page restreinte
+            // Tenter de se connecter avec Firebase Authentication
+            await signInWithEmailAndPassword(auth, email, password);
+
+            // Après une connexion réussie, rediriger vers une page restreinte
             navigate('/restricted');
-        } catch (error) {
-            console.error('Erreur auth:', error);
-            alert(error.message);
+        } catch (err) {
+            console.error('Erreur lors de la connexion:', err);
+            // Gérer les erreurs courantes
+            switch (err.code) {
+                case 'auth/user-not-found':
+                    setError('Aucun utilisateur trouvé avec cet email.');
+                    break;
+                case 'auth/wrong-password':
+                    setError('Mot de passe incorrect.');
+                    break;
+                case 'auth/invalid-email':
+                    setError('Email invalide.');
+                    break;
+                default:
+                    setError('Erreur lors de la connexion. Veuillez réessayer.');
+            }
         }
     };
 
     return (
         <div className="signin-container" style={{ marginTop: '2rem' }}>
-            <h2>{isSignUp ? 'Créer un compte' : 'Se connecter'}</h2>
+            <h2>Se connecter</h2>
             <form onSubmit={handleSubmit} className="signin-form">
                 <input
                     type="email"
@@ -46,14 +60,16 @@ function SignIn() {
                     required
                 />
 
+                {error && <p className="error-message" style={{ color: 'red' }}>{error}</p>}
+
                 <button type="submit">
-                    {isSignUp ? 'S’inscrire' : 'Se connecter'}
+                    Se connecter
                 </button>
             </form>
 
-            <button onClick={() => setIsSignUp(!isSignUp)} style={{ marginTop: '1rem' }}>
-                {isSignUp ? 'Déjà un compte ? Connectez-vous' : 'Pas de compte ? Inscrivez-vous'}
-            </button>
+            <div style={{ marginTop: '1rem' }}>
+                <p>Pas de compte ? <Link to="/signup">Créez un compte</Link></p>
+            </div>
         </div>
     );
 }

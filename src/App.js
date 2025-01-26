@@ -12,6 +12,24 @@ import RestrictedGame from './components/RestrictedGame'; // Mode de jeu restrei
 import Navbar from './components/Navbar'; // Import de la Navbar
 import './App.css';
 import StripeProvider from "./StripeProvider"; // Ton style global (optionnel)
+import { AuthProvider, useAuth } from './components/AuthContext';
+
+
+// Composant pour protéger les routes restreintes
+function PrivateRoute({ children }) {
+    const { currentUser, userClaims } = useAuth();
+
+    if (!currentUser) {
+        return <Navigate to="/signin" />;
+    }
+
+    if (!userClaims || !userClaims.paid) {
+        return <Navigate to="/" />;
+    }
+
+    return children;
+}
+
 
 function App() {
     const [user, setUser] = useState(null);
@@ -56,9 +74,8 @@ function App() {
                     <Route path="/" element={<Home user={user}/>}/>
 
                     {/* Page de connexion / inscription */}
-                    <Route path="/signin" element={<SignIn/>}/>
-
-                    <Route path="/signup" element={<SignUp/>}/> {/* Nouvelle Route */}
+                    <Route path="/signin" element={<SignIn />} />
+                    <Route path="/signup" element={<SignUp />} />
 
                     {/* Mode de jeu classique */}
                     <Route path="/classic" element={<Game/>}/>
