@@ -1,0 +1,57 @@
+/* Home.css */
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.home-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 5px var(--neon-color);
+}
+
+.home-description {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.home-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.home-button {
+    background: var(--accent-color);
+    color: var(--main-bg-color);
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.home-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px var(--neon-color), 0 0 20px var(--neon-color);
+}
+
+.home-button.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Responsive: empilement vertical sur petits écrans */
+@media (max-width: 600px) {
+    .home-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .home-button {
+        width: 100%;
+    }
+}

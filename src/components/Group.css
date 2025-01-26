@@ -1,90 +1,157 @@
-/* Group.css */
-.group {
-    display: flex;
-    align-items: center;
-    background-color: #ecf0f1;
-    padding: 5px;
-    border-radius: 5px;
-    position: relative;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
+/* src/components/Game.css */
+
+.game-container {
+    max-width: 700px;
+    margin: 2rem auto;
+    background-color: var(--secondary-bg-color);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 15px var(--neon-color);
+    color: var(--text-color);
 }
 
-.group-name {
-    flex: 1;
-    border: none;
-    background: transparent;
-    font-size: 1rem;
-    margin-right: 5px;
-}
-
-.points {
-    display: flex;
-    align-items: center;
-}
-
-.points button {
-    background-color: #e67e22;
-    color: white;
-    width: 30px;
-    height: 30px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.points span {
-    margin: 0 5px;
-    width: 20px;
+.game-container h2 {
     text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    text-shadow: 0 0 5px var(--neon-color);
 }
 
-.remove-group-button {
-    background-color: transparent;
-    color: #e74c3c;
+.difficulty-selection {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.difficulty-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.difficulty-buttons button {
+    background: var(--accent-color);
+    color: var(--main-bg-color);
     border: none;
+    border-radius: var(--border-radius);
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.difficulty-buttons button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px var(--neon-color), 0 0 20px var(--neon-color);
+}
+
+.game-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.game-actions button {
+    background: var(--accent-color);
+    color: var(--main-bg-color);
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.game-actions button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px var(--neon-color), 0 0 20px var(--neon-color);
+}
+
+.answer-text {
+    text-align: center;
     font-size: 1.2rem;
-    cursor: pointer;
-    margin-left: 10px;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 5px var(--neon-color);
 }
 
-.remove-group-button:disabled {
-    color: #bdc3c7;
-    cursor: not-allowed;
+.game-input {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
 }
 
-.remove-group-button:hover:not(:disabled) {
-    color: #c0392b;
+.game-input input[type="text"] {
+    padding: 0.6rem;
+    border: none;
+    border-radius: var(--border-radius);
+    max-width: 300px;
+    width: 100%;
 }
 
-/* Adaptation mobile */
-@media (max-width: 480px) {
-    .group {
-        padding: 3px;
+.game-input button {
+    padding: 0.6rem 1rem;
+    background: var(--accent-color);
+    color: var(--main-bg-color);
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.game-input button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px var(--neon-color), 0 0 20px var(--neon-color);
+}
+
+.api-message {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--neon-color);
+}
+
+.change-film {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.change-film button {
+    background: var(--accent-color);
+    color: var(--main-bg-color);
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.change-film button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px var(--neon-color), 0 0 20px var(--neon-color);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .game-container {
+        padding: 1rem;
     }
 
-    .group-name {
-        font-size: 0.9rem;
-        margin-right: 3px;
+    .difficulty-buttons {
+        flex-direction: column;
+        gap: 0.5rem;
     }
 
-    .points button {
-        width: 25px;
-        height: 25px;
-        font-size: 0.8rem;
-        margin-left: 1px;
-        margin-right: 1px;
+    .game-actions {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .points span {
-        margin: 0 3px;
-        width: 18px;
+    .game-input {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .remove-group-button {
-        font-size: 1rem;
-        margin-left: 5px;
+    .game-input button {
+        width: 100%;
     }
 }

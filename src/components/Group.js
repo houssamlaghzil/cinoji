@@ -1,40 +1,32 @@
-// src/components/Group.js
 import React from 'react';
-import './Group.css';
+import './Group.css'
 
-function Group({ group, onUpdate, onRemove, disableRemove }) {
+function Group({group, onUpdate, onRemove, disableRemove}) {
     const handleNameChange = (e) => {
-        onUpdate({ ...group, name: e.target.value });
+        onUpdate({...group, name: e.target.value});
     };
 
-    const increment = () => {
-        onUpdate({ ...group, points: group.points + 1 });
+    const incrementPoints = () => {
+        onUpdate({...group, points: group.points + 1});
     };
 
-    const decrement = () => {
-        onUpdate({ ...group, points: group.points > 0 ? group.points - 1 : 0 });
+    const decrementPoints = () => {
+        onUpdate({...group, points: group.points - 1});
     };
 
     return (
-        <div className="group">
+        <div className="group-container">
             <input
                 type="text"
                 value={group.name}
                 onChange={handleNameChange}
-                className="group-name"
+                style={{marginRight: '1rem'}}
             />
-            <div className="points">
-                <button onClick={decrement}>-</button>
-                <span>{group.points}</span>
-                <button onClick={increment}>+</button>
-            </div>
-            <button
-                className="remove-group-button"
-                onClick={onRemove}
-                disabled={disableRemove}
-                title={disableRemove ? "Au moins un groupe doit être présent" : "Retirer ce groupe"}
-            >
-                &times;
+            <span>Points: {group.points}</span>
+            <button onClick={incrementPoints} style={{marginLeft: '1rem'}}>+1</button>
+            <button onClick={decrementPoints}>-1</button>
+            <button onClick={onRemove} disabled={disableRemove} style={{marginLeft: '1rem'}}>
+                Supprimer
             </button>
         </div>
     );

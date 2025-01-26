@@ -1,424 +1,157 @@
 /* src/components/Game.css */
 
-/* Variables pour la thématique et les transitions */
-:root {
-    --primary-color: #4CAF50;
-    --secondary-color: #ffffff;
-    --accent-color: #FFC107;
-    --background-color: #f5f5f5;
-    --text-color: #333333;
-    --transition-duration: 0.3s;
-}
-
-/* Thème sombre */
-@media (prefers-color-scheme: dark) {
-    :root {
-        --primary-color: #81C784;
-        --secondary-color: #424242;
-        --accent-color: #FFB74D;
-        --background-color: #303030;
-        --text-color: #ffffff;
-    }
-}
-
-/* Conteneur principal */
 .game-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: var(--background-color);
-    min-height: 100vh;
-    box-sizing: border-box;
-    transition: background-color var(--transition-duration), color var(--transition-duration);
+    max-width: 700px;
+    margin: 2rem auto;
+    background-color: var(--secondary-bg-color);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 15px var(--neon-color);
     color: var(--text-color);
 }
 
-/* Bouton de redémarrage */
-.restart-button {
-    align-self: flex-end;
-    padding: 10px 20px;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color var(--transition-duration), transform var(--transition-duration);
-}
-
-.restart-button:hover {
-    background-color: #388e3c; /* Ajusté pour ne pas utiliser darken */
-    transform: scale(1.05);
-}
-
-.restart-button:active {
-    transform: scale(0.95);
-}
-
-/* Boutons de contrôle */
-.buttons {
-    margin-top: 20px;
-    display: flex;
-    gap: 10px;
-}
-
-.buttons button {
-    padding: 10px 15px;
-    background-color: var(--accent-color);
-    color: var(--text-color);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color var(--transition-duration), transform var(--transition-duration);
-}
-
-.buttons button:hover {
-    background-color: #e0a800; /* Ajusté pour ne pas utiliser darken */
-    transform: scale(1.05);
-}
-
-.buttons button:active {
-    transform: scale(0.95);
-}
-
-/* Section de réponse */
-.answer-section {
-    margin-top: 30px;
-    padding: 20px;
-    background-color: var(--secondary-color);
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.game-container h2 {
     text-align: center;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 0.5s forwards;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    text-shadow: 0 0 5px var(--neon-color);
 }
 
-.answer-title {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+.difficulty-selection {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.difficulty-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.difficulty-buttons button {
+    background: var(--accent-color);
+    color: var(--main-bg-color);
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.difficulty-buttons button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px var(--neon-color), 0 0 20px var(--neon-color);
+}
+
+.game-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.game-actions button {
+    background: var(--accent-color);
+    color: var(--main-bg-color);
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.game-actions button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px var(--neon-color), 0 0 20px var(--neon-color);
 }
 
 .answer-text {
+    text-align: center;
     font-size: 1.2rem;
-    color: var(--primary-color);
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 5px var(--neon-color);
 }
 
-.continue-button {
-    padding: 10px 20px;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color var(--transition-duration), transform var(--transition-duration);
-}
-
-.continue-button:hover {
-    background-color: #388e3c; /* Ajusté pour ne pas utiliser darken */
-    transform: scale(1.05);
-}
-
-.continue-button:active {
-    transform: scale(0.95);
-}
-
-/* Animations */
-@keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Tableau des scores */
-.scoreboard {
-    margin-top: 40px;
-    width: 100%;
-    max-width: 600px;
-    padding: 20px;
-    background-color: var(--secondary-color);
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color var(--transition-duration), transform var(--transition-duration);
-}
-
-.scoreboard h3 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.scoreboard-controls {
+.game-input {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
 }
 
-.scoreboard-controls button {
-    padding: 8px 12px;
-    background-color: var(--accent-color);
-    color: black;
+.game-input input[type="text"] {
+    padding: 0.6rem;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 0.9rem;
-    transition: background-color var(--transition-duration), transform var(--transition-duration);
-}
-
-.scoreboard-controls button:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-}
-
-.scoreboard-controls button:hover:not(:disabled) {
-    background-color: #e0a800; /* Ajusté pour ne pas utiliser darken */
-    transform: scale(1.05);
-}
-
-.scoreboard-controls button:active:not(:disabled) {
-    transform: scale(0.95);
-}
-
-.scoreboard table {
+    border-radius: var(--border-radius);
+    max-width: 300px;
     width: 100%;
-    border-collapse: collapse;
 }
 
-.scoreboard th,
-.scoreboard td {
-    padding: 10px;
-    text-align: center;
-    border-bottom: 1px solid #ddd;
-}
-
-.scoreboard th {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-}
-
-.action-button {
-    margin: 0 5px;
-    padding: 5px 10px;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+.game-input button {
+    padding: 0.6rem 1rem;
+    background: var(--accent-color);
+    color: var(--main-bg-color);
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    border-radius: var(--border-radius);
     font-size: 1rem;
-    transition: background-color var(--transition-duration), transform var(--transition-duration);
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.action-button:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-}
-
-.action-button.increment {
-    background-color: #4CAF50;
-}
-
-.action-button.increment:hover:not(:disabled) {
-    background-color: #388e3c;
+.game-input button:hover {
     transform: scale(1.05);
+    box-shadow: 0 0 10px var(--neon-color), 0 0 20px var(--neon-color);
 }
 
-.action-button.decrement {
-    background-color: #f44336;
+.api-message {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--neon-color);
 }
 
-.action-button.decrement:hover:not(:disabled) {
-    background-color: #d32f2f;
+.change-film {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.change-film button {
+    background: var(--accent-color);
+    color: var(--main-bg-color);
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.change-film button:hover {
     transform: scale(1.05);
+    box-shadow: 0 0 10px var(--neon-color), 0 0 20px var(--neon-color);
 }
 
-.action-button.delete {
-    background-color: #9E9E9E;
-}
-
-.action-button.delete:hover:not(:disabled) {
-    background-color: #757575;
-    transform: scale(1.05);
-}
-
-.action-button.delete:active:not(:disabled) {
-    transform: scale(0.95);
-}
-
-/* Responsivité */
+/* Responsive */
 @media (max-width: 600px) {
     .game-container {
-        padding: 10px;
+        padding: 1rem;
     }
 
-    .restart-button {
-        padding: 8px 16px;
-        font-size: 0.9rem;
-    }
-
-    .buttons button {
-        padding: 8px 12px;
-        font-size: 0.9rem;
-    }
-
-    .answer-section {
-        padding: 15px;
-    }
-
-    .answer-title {
-        font-size: 1.3rem;
-    }
-
-    .answer-text {
-        font-size: 1rem;
-    }
-
-    .continue-button {
-        padding: 8px 16px;
-        font-size: 0.9rem;
-    }
-
-    .scoreboard {
-        max-width: 100%;
-    }
-
-    .scoreboard th,
-    .scoreboard td {
-        padding: 8px;
-        font-size: 0.9rem;
-    }
-
-    .scoreboard-controls {
+    .difficulty-buttons {
         flex-direction: column;
-        gap: 10px;
+        gap: 0.5rem;
     }
 
-    .scoreboard-controls button {
+    .game-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .game-input {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .game-input button {
         width: 100%;
-    }
-
-    .action-button {
-        padding: 5px 8px;
-        font-size: 0.8rem;
-    }
-}
-
-
-/* Style pour le conteneur de la réponse */
-.reponse {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-    padding: 20px;
-    background-color: var(--secondary-color);
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color var(--transition-duration), transform var(--transition-duration);
-    width: 100%;
-    max-width: 400px;
-}
-
-/* Style pour l'input */
-#value {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    font-size: 1rem;
-    border: 2px solid var(--primary-color);
-    border-radius: 5px;
-    outline: none;
-    transition: border-color var(--transition-duration), box-shadow var(--transition-duration);
-}
-
-/* Effets focus pour l'input */
-#value:focus {
-    border-color: var(--accent-color);
-    box-shadow: 0 0 5px var(--accent-color);
-}
-
-/* Style pour le bouton */
-.reponse button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    font-weight: bold;
-    color: var(--secondary-color);
-    background-color: var(--primary-color);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color var(--transition-duration), transform var(--transition-duration);
-}
-
-/* Hover et clic pour le bouton */
-.reponse button:hover {
-    background-color: #388e3c; /* Ajusté pour ne pas utiliser darken */
-    transform: scale(1.05);
-}
-
-.reponse button:active {
-    transform: scale(0.95);
-}
-
-/* Animation d'apparition */
-.reponse {
-    opacity: 0;
-    animation: fadeIn 0.5s forwards;
-}
-
-/* Animation pour rendre l'apparition fluide */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-/* Style pour le texte de résultat */
-#resultat {
-    font-size: 1.2rem; /* Taille de texte légèrement augmentée */
-    font-weight: bold; /* Texte mis en valeur */
-    text-align: center; /* Centré */
-    margin-top: 15px;
-    padding: 10px 15px;
-    color: var(--text-color); /* Couleur du texte (variable définie dans le fichier CSS global) */
-    background-color: var(--secondary-color); /* Fond assorti au thème */
-    border: 2px solid var(--primary-color); /* Bordure cohérente avec le design général */
-    border-radius: 8px; /* Coins arrondis */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre pour donner de la profondeur */
-    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
-}
-
-/* Animation de mise en avant (par exemple, lorsqu’un résultat est affiché) */
-#resultat:empty {
-    display: none; /* Si le texte est vide, on ne montre rien */
-}
-
-/* Effet au moment où le texte apparaît */
-#resultat.show {
-    transform: scale(1.1); /* Effet de zoom temporaire */
-    background-color: var(--accent-color); /* Couleur d'accentuation */
-    animation: popIn 0.3s ease-in-out;
-}
-
-/* Animation "pop" pour le texte */
-@keyframes popIn {
-    0% {
-        transform: scale(0.9);
-        opacity: 0;
-    }
-    50% {
-        transform: scale(1.2);
-        opacity: 1;
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1;
     }
 }

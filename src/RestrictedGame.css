@@ -1,0 +1,21 @@
+/* RestrictedGame.css */
+
+.restricted-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    background-color: var(--secondary-bg-color);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    box-shadow: 0 0 8px var(--neon-color);
+}
+
+.restricted-container h2 {
+    text-shadow: 0 0 5px var(--neon-color);
+}
+
+@media (max-width: 600px) {
+    .restricted-container {
+        width: 90%;
+    }
+}
